@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jfx.Controller">
+    <children>
+        <Label fx:id="songname" contentDisplay="TOP" layoutX="199.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" text="MP3 PLAYER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <font>
+                <Font size="52.0" />
+            </font>
+            <padding>
+                <Insets left="80.0" />
+            </padding>
+        </Label>
+        <ProgressBar fx:id="songProgressbar" prefWidth="600.0" progress="0.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+        <Button fx:id="play" mnemonicParsing="false" onAction="#playMedia" text="Play" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+            <font>
+                <Font size="18.0" />
+            </font></Button>
+        <Button fx:id="pause" alignment="CENTER_RIGHT" layoutX="100.0" layoutY="130.0" mnemonicParsing="false" onAction="#pauseMedia" text="Pause" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="469.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="reset" alignment="CENTER_RIGHT" layoutX="70.0" layoutY="131.0" mnemonicParsing="false" onAction="#resetMedia" text="Reset" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="134.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="next" alignment="CENTER_RIGHT" layoutX="70.0" layoutY="131.0" mnemonicParsing="false" onAction="#nextMedia" text="Next" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="previous" alignment="CENTER_RIGHT" layoutX="80.0" layoutY="141.0" mnemonicParsing="false" onAction="#previousMedia" text="Previous" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="205.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <ComboBox fx:id="speed" prefWidth="150.0" promptText="Speed" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="365.0" AnchorPane.rightAnchor="138.0" AnchorPane.topAnchor="160.0" />
+        <Slider fx:id="volumeSlider" max="200.0" value="100.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="0.0" />
+    </children>
+</AnchorPane>
