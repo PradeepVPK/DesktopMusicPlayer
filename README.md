@@ -12,7 +12,7 @@ This is a basic desktop music player application built with JavaFX. It allows us
 
 ## Screenshots
 
-![Music Player](screenshots/screenshot.png)
+![Music Player](screenshots/musicplayer.png)
 
 ## Getting Started
 
